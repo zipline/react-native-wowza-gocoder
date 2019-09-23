@@ -98,13 +98,6 @@ public class BroadcastManager {
     }
 
     private static int getOrientationBehavior(String orientation) {
-        switch (orientation) {
-            case "landscape":
-                return WZMediaConfig.ALWAYS_LANDSCAPE;
-            case "portrait":
-                return WZMediaConfig.ALWAYS_PORTRAIT;
-            default:
-                return WZMediaConfig.SAME_AS_SOURCE;
-        }
+        return WZMediaConfig.SAME_AS_SOURCE;
     }
 }
